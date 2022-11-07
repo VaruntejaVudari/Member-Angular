@@ -1,0 +1,168 @@
+<h3>Member Regrestration</h3>
+<div class="row g-3">
+  <div class="col">
+    <label for="formGroupExampleInput" class="form-label">Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="formGroupExampleInput"
+      [(ngModel)]="member.name"
+      placeholder="Enter the Name"
+    />
+  </div>
+  <div class="col">
+    <label for="formGroupExampleInput" class="form-label">Date of birth</label>
+    <input
+      type="text"
+      class="form-control"
+      id="formGroupExampleInput"
+      [(ngModel)]="member.dob"
+      placeholder="Enter the Date of birth"
+    />
+  </div>
+  <div class="col">
+    <label for="formGroupExampleInput" class="form-label">Address</label>
+    <input
+      type="text"
+      class="form-control"
+      id="formGroupExampleInput"
+      [(ngModel)]="member.address"
+      placeholder="Enter the Address"
+    />
+  </div>
+</div>
+<div class="row g-3">
+  <div class="col">
+    <label for="inputState" class="form-label">Country</label>
+    <select
+      id="inputCountry"
+      class="form-select"
+      [(ngModel)]="member.country"
+      placeholder="Chose the Country"
+    >
+      <option selected>India</option>
+      <option>UK</option>
+    </select>
+  </div>
+  <div class="col">
+    <label for="inputState" class="form-label">State</label>
+    <select
+      id="inputState"
+      class="form-select"
+      [(ngModel)]="member.state"
+      placeholder="Chose the State"
+    >
+      <option selected>AP</option>
+      <option>UP</option>
+    </select>
+  </div>
+  <div class="col">
+    <label for="formGroupExampleInput" class="form-label">Email</label>
+    <input
+      type="text"
+      class="form-control"
+      id="formGroupExampleInput"
+      [(ngModel)]="member.email"
+      placeholder="Enter the  Email address"
+    />
+  </div>
+</div>
+<div class="row g-3">
+  <div class="col">
+    <label for="formGroupExampleInput" class="form-label">Pan number</label>
+    <input
+      type="text"
+      class="form-control"
+      id="formGroupExampleInput"
+      [(ngModel)]="member.pan"
+      placeholder="Enter the  Pan number"
+    />
+  </div>
+  <div class="col">
+    <label for="formGroupExampleInput" class="form-label">Contact number</label>
+    <input
+      type="number"
+      class="form-control"
+      id="formGroupExampleInput"
+      [(ngModel)]="member.contactno"
+      placeholder="Enter the  Contact number"
+    />
+  </div>
+  <div class="col">
+    <label for="formGroupExampleInput" class="form-label">lgIpMac </label>
+    <input
+      type="text"
+      class="form-control"
+      id="formGroupExampleInput"
+      [(ngModel)]="member.lgIpMac"
+      placeholder="Enter the  lgIpMac URL"
+    />
+  </div>
+</div>
+<div class="row g-3">
+  <div class="col">
+    <label for="formGroupExampleInput" class="form-label">lgIpMacUpd </label>
+    <input
+      type="text"
+      class="form-control"
+      id="formGroupExampleInput"
+      [(ngModel)]="member.lgIpMacUpd"
+      placeholder="Enter the  lgIpMacUpd URL"
+    />
+  </div>
+  <div class="col">
+    <label for="formGroupExampleInput" class="form-label">Username </label>
+    <input
+      type="text"
+      class="form-control"
+      id="formGroupExampleInput"
+      [(ngModel)]="member.username"
+      placeholder="Username"
+    />
+  </div>
+  <div class="col">
+    <label for="formGroupExampleInput" class="form-label">Password </label>
+    <input
+      type="text"
+      class="form-control"
+      id="formGroupExampleInput"
+      [(ngModel)]="member.password"
+      placeholder="Password"
+    />
+  </div>
+</div>
+
+<br />
+<button type="button" class="btn btn-primary btn-lg" (click)="save()">
+  Save Member
+</button>
+<!--
+<br />
+<br />
+<button type="button" class="btn btn-primary btn-lg" (click)="sort()">
+  Sort
+</button>
+<ol class="list-group list-group-numbered">
+  <li *ngFor="let b of bookses; index as i" class="list-group-item">
+    <span>{{ b.title }}</span>
+    <br />
+    <span>{{ b.category }}</span>
+    <br />
+    <span>{{ b.image }}</span>
+    <br />
+    <span>{{ b.price }}</span>
+    <br />
+    <span>{{ b.publisher }}</span>
+    <br />
+    <span>{{ b.content }}</span>
+    <br />
+    <button
+      type="button"
+      (click)="deletebook(b, i)"
+      style="margin-right: 500"
+      class="btn btn-danger"
+    >
+      Delete
+    </button>
+  </li>
+</ol> -->
